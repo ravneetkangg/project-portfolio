@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./PortfolioWebsite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="./userAsset/r.png" class="logo">
+                    <div class="logo-text">avneet Singh Kang</div>
+                </div>
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                    <div onclick="f11()"><i class="fa-solid fa-toggle-on"></i></div>
+                </div>
+            </div>
+
+            <div class="hero-section">
+                <div class="faded-text">Ravneet Singh Kang</div>
+                <div class="hero-section-left">
+                    <div class="hero-section-heading">Ravneet Singh Kang</div>
+                    <div class="hero-section-heading hero-section-sub-heading">I am a <span class="role"></span></div>
+                    <div class="hero-section-description">
+                        I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software developer.
+                    </div>
+                    <button class="btn-pink" id="btn">Hire me</button>
+                </div>
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <img src="./userAsset/dots.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-cube">
+                        <img src="./userAsset/cube.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-circle">
+                        <img src="./userAsset/circle.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-zigzag">
+                        <img src="./userAsset/zigzags.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <img src="./userAsset/plus.png" alt="">
+                    </div>
+                    <div class="user-image">
+                        <img src="./userAsset/r1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-section" id="abc">
+            <h2 class="page-header">Projects</h2>
+            <div class="project-container">
+                <a href="https://github.com/ravneetkangg/netflix-clone">
+                    <div class="project-card " id="project1">
+                        <div class="project-number project-number-right">01</div>
+                        <div class="project-content project-content-left">
+                            <div class="project-skills-container">
+                                <img src="./stack/HTML.png" alt="" class="project-skills">
+                                <img src="./stack/CSS.png" alt="" class="project-skills">
+                                <img src="./stack/Javascript.svg" alt="" class="project-skills">
+                                <img src="./stack/Bootstrap.svg" alt="" class="project-skills">
+                            </div>
+                            <h2 class="project-heading" style="color: white;">Netflix clone</h2>
+                            <div class="project-subheading" style="color: white;">
+                                Clone of Netflix website made using html and css
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-pink btn-project">Read More</button>
+                                <a href="">
+                                    <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                                </a>
+                                <a href="">
+                                    <i title="Live Link" class="fa-solid fa-link icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/ravneetkangg/weather-website-using-react/tree/master/myapp">
+                    <div class="project-card" id="project2">
+                        <div class="project-number project-number-left">02</div>
+                        <div class="project-content project-content-right">
+                            <div class="project-skills-container">
+                                <img src="./stack/HTML.png" alt="" class="project-skills">
+                                <img src="./stack/CSS.png" alt="" class="project-skills">
+                                <img src="./stack/Javascript.svg" alt="" class="project-skills">
+                                <img src="./stack/React.png" alt="" class="project-skills">
+
+                            </div>
+                            <h2 class="project-heading" style="color: white;">Weather website</h2>
+                            <div class="project-subheading" style="color: white;">
+                                Weather website made usign React, works by fetching API
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-pink btn-project">Read More</button>
+                                <a href="">
+                                    <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                                </a>
+                                <a href="">
+                                    <i title="Live Link" class="fa-solid fa-link icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <div class="project-card" id="project3">
+                    <div class="project-number project-number-right">03</div>
+                    <div class="project-content project-content-left">
+                        <div class="project-skills-container">
+                            <img src="./stack/CSS.png" alt="" class="project-skills">
+                            <img src="./stack/Tailwind.png" alt="" class="project-skills">
+                            <img src="./stack/Express.png" alt="" class="project-skills">
+                            <img src="./stack/Vercel.svg" alt="" class="project-skills">
+                            <img src="./stack/NextJsCircle.png" alt="" class="project-skills">
+                            <img src="./stack/Redux.svg" alt="" class="project-skills">
+                            <img src="./stack/MongoDB.svg" alt="" class="project-skills">
+                            <img src="./stack/Javascript.svg" alt="" class="project-skills">
+                            <img src="./stack/HTML.png" alt="" class="project-skills">
+                            <img src="./stack/Bootstrap.svg" alt="" class="project-skills">
+                        </div>
+                        <h2 class="project-heading">Isha Tattva</h2>
+                        <div class="project-subheading">
+                            A Website for interior designer to showcase her works and samples.
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" id="project4">
+                    <div class="project-number project-number-left">04</div>
+                    <div class="project-content project-content-right">
+                        <div class="project-skills-container">
+                            <img src="./stack/CSS.png" alt="" class="project-skills">
+                            <img src="./stack/Tailwind.png" alt="" class="project-skills">
+                            <img src="./stack/Express.png" alt="" class="project-skills">
+                            <img src="./stack/Vercel.svg" alt="" class="project-skills">
+                            <img src="./stack/NextJsCircle.png" alt="" class="project-skills">
+                        </div>
+                        <h2 class="project-heading">Granit</h2>
+                        <div class="project-subheading">
+                            A architectural website to plan your building or home(Hebrew Language)
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-pink btn-project">Read More</button>
+                            <a href="">
+                                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                            </a>
+                            <a href="">
+                                <i title="Live Link" class="fa-solid fa-link icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div id="skills" class="skills-container container">
+            <div class="skills-faded-text">Skills</div>
+            <div class="skills-container-left">
+                <h2 class="skills-heading">
+                    <span class="caps">M</span>e and<br/>
+                    <span class="caps">M</span>yTech Stacks
+                </h2>
+                <div class="skills-subheading">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fugit odit molestias reprehenderit quod nesciunt debitis impedit quae iure voluptas eaque, obcaecati, ipsam maxime! Saepe quo maxime vel doloribus repudiandae voluptates cupiditate a nisi
+                        repellendus tempore, officia
+                    </p>
+                    <br>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi porro distinctio praesentium ipsam vitae, veritatis ut quidem a corrupti iusto soluta similique illo cumque numquam. Alias hic corrupti ratione dolores ad eos explicabo, assumenda nihil sint
+                        itaque laborum enim error?
+                    </p>
+                    <br>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia enim asperiores placeat praesentium odio delectus reiciendis, eligendi esse soluta, numquam atque ratione ipsa cum quibusdam minus exercitationem fugiat alias architecto ex iusto non. Ut autem
+                        aperiam soluta quidem volu
+                    </p>
+                </div>
+            </div>
+            <div class="skills-container-right">
+                <img src="./userAsset/blob vector.png" class="blob-style" alt="">
+
+                <img src="./stack/HTML.png" alt="" class="skills-logo">
+                <img src="./stack/CSS.png" alt="" class="skills-logo">
+                <img src="./stack/Javascript.svg" alt="" class="skills-logo">
+                <img src="./stack/React.png" alt="" class="skills-logo">
+                <img src="./stack/NodeJs.svg" alt="" class="skills-logo">
+                <img src="./stack/Next.svg" alt="" class="skills-logo">
+                <img src="./stack/Redux.svg" alt="" class="skills-logo">
+                <img src="./stack/Tailwind.png" alt="" class="skills-logo">
+                <img src="./stack/Bootstrap.svg" alt="" class="skills-logo">
+                <img src="./stack/Git.svg" alt="" class="skills-logo">
+                <img src="./stack/Github.svg" alt="" class="skills-logo">
+                <img src="./stack/MongoDB.svg" alt="" class="skills-logo">
+                <img src="./stack/Express.png" alt="" class="skills-logo">
+                <img src="./stack/Graphql.svg" alt="" class="skills-logo">
+                <img src="./stack/MaterialUI.svg" alt="" class="skills-logo">
+            </div>
+        </div>
+
+        <div class="contactus-form-container" id="contactme efg">
+            <div class="container" id="fgh">
+
+                <h1 class="contactus-heading">Contact me</h1>
+
+                <h3 class="contactus-sub-heading">
+                    Questions, thoughts, or just want to say hello?
+                </h3>
+
+
+                <div class="contactus-form-container" id="def">
+                    <form class="form">
+                        <div class="formfield-container">
+                            <input class="formfield" type="text" name="name" id="" placeholder="Enter your name" />
+
+                            <input class="formfield" type="email" name="email" id="" placeholder="Enter your email address" />
+
+                            <input class="formfield" type="text" name="subject" id="" placeholder="Enter your subject" />
+
+                            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message"></textarea>
+
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn-pink" id="submit-btn">
+                      Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+                    </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="container" id="xcv">
+                <div class="footer-wrapper">
+                    <div class="footer-faded-text">Ravneet Singh Kang</div>
+
+                    <div class="link-wrapper">
+                        <div>
+                            <a href="#">Projects</a>
+                        </div>
+                        <div>
+                            <a href="#skills">Skills</a>
+                        </div>
+                        <div>
+                            <a href="#contactme">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="icon-wrapper">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                        <i class="fa-brands fa-github icon"></i>
+                        <i class="fa-brands fa-twitter icon"></i>
+                        <i class="fa-brands fa-instagram icon"></i>
+                        <i class="fa-regular fa-envelope icon"></i>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "UI-UX Designer",
+                "Backend Developer",
+                "Coder",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+
+        function f11() {
+            document.body.classList.toggle("dark1");
+            let x = document.getElementById("abc");
+            let y = document.getElementById("def");
+            let z = document.getElementById("fgh");
+            let u = document.getElementById("efg");
+            let v = document.getElementById("xcv");
+            x.classList.toggle("dark1");
+            y.classList.toggle("dark1");
+            z.classList.toggle("dark1");
+            u.classList.toggle("dark1");
+            v.classList.toggle("dark1");
+
+        }
+    </script>
+</body>
+
+</html>
