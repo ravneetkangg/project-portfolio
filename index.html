@@ -2,83 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ravneet Portfolio</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <div id="wrapper">
         <div class="container">
-
-
+            <!-- Navbar -->
             <div class="navbar">
                 <div class="logo-container">
-                    <img src="./userAsset/r.png" class="logo">
+                    <img src="./userAsset/r.png" class="logo" />
                     <div class="logo-text">avneet Singh Kang</div>
                 </div>
                 <div class="nav-items">
                     <div><a href="#projects">Projects</a></div>
                     <div><a href="#skills">Skills</a></div>
                     <div><a href="#contactme">Contact Me</a></div>
-                    <div onclick="f11()"><i class="fa-solid fa-toggle-on"></i></div>
-                </div>
+                    <div><a>Dark Mode</a></div>
+                    <label class="switch">
+  <input type="checkbox" id="theme-toggle" onchange="f11()" />
+  <span class="slider round"></span>
+</label> </div>
             </div>
 
-
+            <!-- Hero Section -->
             <div class="hero-section">
                 <div class="hero-section-left">
                     <div class="hero-section-heading">Ravneet Singh Kang</div>
-                    <div class="hero-section-heading hero-section-sub-heading">I am a <span class="role"></span></div>
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
                     <div class="hero-section-description">
                         I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software developer.
                     </div>
-                    <button class="btn-pink" id="btn">Hire me</button>
+                    <a href="#contactme"><button class="btn-pink" id="btn">Hire me</button></a>
                 </div>
                 <div class="hero-section-right">
-                    <div class="absolute icons icon-dots">
-                        <img src="./userAsset/dots.png" alt="">
-                    </div>
-                    <div class="absolute icons icon-cube">
-                        <img src="./userAsset/cube.png" alt="">
-                    </div>
-                    <div class="absolute icons icon-circle">
-                        <img src="./userAsset/circle.png" alt="">
-                    </div>
-                    <div class="absolute icons icon-zigzag">
-                        <img src="./userAsset/zigzags.png" alt="">
-                    </div>
-                    <div class="absolute icons icon-plus">
-                        <img src="./userAsset/plus.png" alt="">
-                    </div>
-                    <div class="user-image">
-                        <img src="./userAsset/r1.png" alt="">
-                    </div>
+                    <div class="absolute icons icon-dots"><img src="./userAsset/dots.png" alt="" /></div>
+                    <div class="absolute icons icon-cube"><img src="./userAsset/cube.png" alt="" /></div>
+                    <div class="absolute icons icon-circle"><img src="./userAsset/circle.png" alt="" /></div>
+                    <div class="absolute icons icon-zigzag"><img src="./userAsset/zigzags.png" alt="" /></div>
+                    <div class="absolute icons icon-plus"><img src="./userAsset/plus.png" alt="" /></div>
+                    <div class="user-image"><img src="./userAsset/r1.png" alt="" /></div>
                 </div>
             </div>
         </div>
 
-
-
-        <div class="project-section" id="abc">
+        <!-- Projects Section -->
+        <div class="project-section" id="projects">
             <h2 class="page-header">Projects</h2>
             <div class="project-container">
-                <div class="project-card " id="project1">
+                <!-- Project 1 -->
+                <div class="project-card" id="project1">
                     <div class="project-number project-number-right">01</div>
                     <div class="project-content project-content-left">
                         <div class="project-skills-container">
-                            <img src="./stack/React.png" alt="" class="project-skills">
-                            <img src="./stack/Nodejs.svg" alt="" class="project-skills">
-                            <img src="./stack/Javascript.svg" alt="" class="project-skills">
-                            <img src="./stack/MongoDB.svg" alt="" class="project-skills">
+                            <img src="./stack/React.png" class="project-skills" />
+                            <img src="./stack/Nodejs.svg" class="project-skills" />
+                            <img src="./stack/Javascript.svg" class="project-skills" />
+                            <img src="./stack/MongoDB.svg" class="project-skills" />
                         </div>
                         <h2 class="project-heading" style="color: white;">Chatter</h2>
-                        <div class="project-subheading" style="color: white;">
-                            Social Networking Website
-                        </div>
+                        <div class="project-subheading" style="color: white;">Social Networking Website</div>
                         <div class="btn-group">
                             <a href="https://github.com/ravneetkangg/CHATTER-twitter-clone-" target="_blank">
                                 <button class="btn-pink btn-project">GitHub Repo</button>
@@ -87,23 +77,21 @@
                                 <button class="btn-pink btn-project">Live Link</button>
                             </a>
                         </div>
-
                     </div>
                 </div>
+
+                <!-- Project 2 -->
                 <div class="project-card" id="project2">
                     <div class="project-number project-number-left">02</div>
                     <div class="project-content project-content-right">
                         <div class="project-skills-container">
-                            <img src="./stack/NodeJs.svg" alt="" class="project-skills">
-                            <img src="./stack/MongoDB.svg" alt="" class="project-skills">
-                            <img src="./stack/Javascript.svg" alt="" class="project-skills">
-                            <img src="./stack/React.png" alt="" class="project-skills">
-
+                            <img src="./stack/NodeJs.svg" class="project-skills" />
+                            <img src="./stack/MongoDB.svg" class="project-skills" />
+                            <img src="./stack/Javascript.svg" class="project-skills" />
+                            <img src="./stack/React.png" class="project-skills" />
                         </div>
                         <h2 class="project-heading" style="color: white;">SHOP-TOP</h2>
-                        <div class="project-subheading" style="color: white;">
-                            E-Commerce made using MERN Stack
-                        </div>
+                        <div class="project-subheading" style="color: white;">E-Commerce made using MERN Stack</div>
                         <div class="btn-group">
                             <a href="https://github.com/ravneetkangg/SHOP-TOP" target="_blank">
                                 <button class="btn-pink btn-project">GitHub Repo</button>
@@ -112,21 +100,20 @@
                                 <button class="btn-pink btn-project">Live Link</button>
                             </a>
                         </div>
-
                     </div>
                 </div>
-                <div class="project-card " id="project3">
+
+                <!-- Project 3 -->
+                <div class="project-card" id="project3">
                     <div class="project-number project-number-right">03</div>
                     <div class="project-content project-content-left">
                         <div class="project-skills-container">
-                            <img src="./stack/HTML.png" alt="" class="project-skills">
-                            <img src="./stack/CSS.png" alt="" class="project-skills">
-                            <img src="./stack/Javascript.svg" alt="" class="project-skills">
+                            <img src="./stack/HTML.png" class="project-skills" />
+                            <img src="./stack/CSS.png" class="project-skills" />
+                            <img src="./stack/Javascript.svg" class="project-skills" />
                         </div>
                         <h2 class="project-heading" style="color: white;">U-Makeup</h2>
-                        <div class="project-subheading" style="color: white;">
-                            E-Commerce Website for Cosmetics
-                        </div>
+                        <div class="project-subheading" style="color: white;">E-Commerce Website for Cosmetics</div>
                         <div class="btn-group">
                             <a href="https://github.com/ravneetkangg/U-Makeup" target="_blank">
                                 <button class="btn-pink btn-project">GitHub Repo</button>
@@ -135,110 +122,84 @@
                                 <button class="btn-pink btn-project">Live Link</button>
                             </a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
 
-
-
+        <!-- Skills Section -->
         <div id="skills" class="skills-container container">
             <div class="skills-faded-text">Skills</div>
             <div class="skills-container-left">
                 <h2 class="skills-heading">
-                    <span class="caps">M</span>e and<br/>
+                    <span class="caps">M</span>e and<br />
                     <span class="caps">M</span>yTech Stacks
                 </h2>
                 <div class="skills-subheading">
                     <p>
                         I am a passionate software developer and a B.Tech graduate with a CGPA of 9.36 from Chitkara University, Patiala, Punjab. My journey in tech has been driven by curiosity and a strong desire to build efficient and scalable solutions.
                     </p>
-                    <br>
+                    <br />
                     <p>
                         I specialize in full stack web development, with hands-on experience in the MERN stack, Spring Boot, and programming languages like Java, C++, HTML, CSS, and JavaScript. I also have a solid understanding of DBMS and Operating Systems.
                     </p>
-                    <br>
+                    <br />
                     <p>
                         You can explore some of my best projects on this webpage to see my work in action. If you're interested in connecting or collaborating, feel free to fill out the contact form below — I’d love to hear from you!
                     </p>
                 </div>
             </div>
             <div class="skills-container-right">
-                <img src="./userAsset/blob vector.png" class="blob-style" alt="">
-
-                <img src="./stack/HTML.png" alt="" class="skills-logo">
-                <img src="./stack/CSS.png" alt="" class="skills-logo">
-                <img src="./stack/Javascript.svg" alt="" class="skills-logo">
-                <img src="./stack/React.png" alt="" class="skills-logo">
-                <img src="./stack/NodeJs.svg" alt="" class="skills-logo">
-                <img src="./stack/Next.svg" alt="" class="skills-logo">
-                <img src="./stack/Redux.svg" alt="" class="skills-logo">
-                <img src="./stack/Tailwind.png" alt="" class="skills-logo">
-                <img src="./stack/Bootstrap.svg" alt="" class="skills-logo">
-                <img src="./stack/Git.svg" alt="" class="skills-logo">
-                <img src="./stack/Github.svg" alt="" class="skills-logo">
-                <img src="./stack/MongoDB.svg" alt="" class="skills-logo">
-                <img src="./stack/Express.png" alt="" class="skills-logo">
-                <img src="./stack/Graphql.svg" alt="" class="skills-logo">
-                <img src="./stack/MaterialUI.svg" alt="" class="skills-logo">
+                <img src="./userAsset/blob vector.png" class="blob-style" alt="" />
+                <img src="./stack/HTML.png" class="skills-logo" />
+                <img src="./stack/CSS.png" class="skills-logo" />
+                <img src="./stack/Javascript.svg" class="skills-logo" />
+                <img src="./stack/React.png" class="skills-logo" />
+                <img src="./stack/NodeJs.svg" class="skills-logo" />
+                <img src="./stack/Next.svg" class="skills-logo" />
+                <img src="./stack/Redux.svg" class="skills-logo" />
+                <img src="./stack/Tailwind.png" class="skills-logo" />
+                <img src="./stack/Bootstrap.svg" class="skills-logo" />
+                <img src="./stack/Git.svg" class="skills-logo" />
+                <img src="./stack/Github.svg" class="skills-logo" />
+                <img src="./stack/MongoDB.svg" class="skills-logo" />
+                <img src="./stack/Express.png" class="skills-logo" />
+                <img src="./stack/Graphql.svg" class="skills-logo" />
+                <img src="./stack/MaterialUI.svg" class="skills-logo" />
             </div>
         </div>
 
-        <div class="contactus-form-container" id="contactme efg">
-            <div class="container" id="fgh">
-
+        <!-- Contact Section -->
+        <div class="contactus-form-container" id="contactme">
+            <div class="container">
                 <h1 class="contactus-heading">Contact me</h1>
-
-                <h3 class="contactus-sub-heading">
-                    Questions, thoughts, or just want to say hello?
-                </h3>
-
-
-                <div class="contactus-form-container" id="def">
-                    <form class="form">
-                        <div class="formfield-container">
-                            <input class="formfield" type="text" name="name" id="" placeholder="Enter your name" />
-
-                            <input class="formfield" type="email" name="email" id="" placeholder="Enter your email address" />
-
-                            <input class="formfield" type="text" name="subject" id="" placeholder="Enter your subject" />
-
-                            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message"></textarea>
-
-                        </div>
-
-                        <div>
-                            <button type="submit" class="btn-pink" id="submit-btn">
-                      Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
-                    </button>
-                        </div>
-
-                    </form>
-
-                </div>
-
-
+                <h3 class="contactus-sub-heading">Questions, thoughts, or just want to say hello?</h3>
+                <form class="form">
+                    <div class="formfield-container">
+                        <input class="formfield" type="text" name="name" placeholder="Enter your name" />
+                        <input class="formfield" type="email" name="email" placeholder="Enter your email address" />
+                        <input class="formfield" type="text" name="subject" placeholder="Enter your subject" />
+                        <textarea name="message" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-pink" id="submit-btn">
+              Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+            </button>
+                    </div>
+                </form>
             </div>
         </div>
 
+        <!-- Footer -->
         <footer>
             <div class="container" id="xcv">
                 <div class="footer-wrapper">
                     <div class="footer-faded-text">Ravneet Singh Kang</div>
-
                     <div class="link-wrapper">
-                        <div>
-                            <a href="#">Projects</a>
-                        </div>
-                        <div>
-                            <a href="#skills">Skills</a>
-                        </div>
-                        <div>
-                            <a href="#contactme">Contact Me</a>
-                        </div>
+                        <div><a href="#projects">Projects</a></div>
+                        <div><a href="#skills">Skills</a></div>
+                        <div><a href="#contactme">Contact Me</a></div>
                     </div>
-
                     <div class="icon-wrapper">
                         <i class="fa-brands fa-linkedin icon"></i>
                         <i class="fa-brands fa-github icon"></i>
@@ -246,11 +207,12 @@
                         <i class="fa-brands fa-instagram icon"></i>
                         <i class="fa-regular fa-envelope icon"></i>
                     </div>
-
                 </div>
             </div>
         </footer>
     </div>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <script>
@@ -270,17 +232,12 @@
 
         function f11() {
             document.body.classList.toggle("dark1");
-            let x = document.getElementById("abc");
-            let y = document.getElementById("def");
-            let z = document.getElementById("fgh");
-            let u = document.getElementById("efg");
-            let v = document.getElementById("xcv");
-            x.classList.toggle("dark1");
-            y.classList.toggle("dark1");
-            z.classList.toggle("dark1");
-            u.classList.toggle("dark1");
-            v.classList.toggle("dark1");
 
+            const projects = document.getElementById("projects");
+            const contact = document.getElementById("contactme");
+            const footer = document.getElementById("xcv");
+
+            [projects, contact, footer].forEach(el => el.classList.toggle("dark1"));
         }
     </script>
 </body>
