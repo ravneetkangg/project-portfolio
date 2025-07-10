@@ -129,7 +129,7 @@
 
         <!-- Skills Section -->
         <div id="skills" class="skills-container container">
-            <div class="skills-faded-text">Skills</div>
+
             <div class="skills-container-left">
                 <h2 class="skills-heading">
                     <span class="caps">M</span>e and<br />
@@ -174,17 +174,15 @@
             <div class="container">
                 <h1 class="contactus-heading">Contact me</h1>
                 <h3 class="contactus-sub-heading">Questions, thoughts, or just want to say hello?</h3>
-                <form class="form">
+                <form class="form" action="https://formspree.io/f/mkgbdgvr" method="POST">
                     <div class="formfield-container">
-                        <input class="formfield" type="text" name="name" placeholder="Enter your name" />
-                        <input class="formfield" type="email" name="email" placeholder="Enter your email address" />
+                        <input class="formfield" type="text" name="name" placeholder="Enter your name" required />
+                        <input class="formfield" type="email" name="email" placeholder="Enter your email address" required />
                         <input class="formfield" type="text" name="subject" placeholder="Enter your subject" />
-                        <textarea name="message" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message"></textarea>
+                        <textarea name="message" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message" required></textarea>
                     </div>
                     <div>
-                        <button type="submit" class="btn-pink" id="submit-btn">
-              Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
-            </button>
+                        <button type="submit" class="btn-pink" id="submit-btn">Send Message</button>
                     </div>
                 </form>
             </div>
