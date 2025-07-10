@@ -541,12 +541,17 @@ a {
 .skills-faded-text {
     position: absolute;
     user-select: none;
-    font-size: 15em;
+    font-size: 10em;
+    /* Reduce font-size if needed */
     font-weight: bold;
     color: rgb(231, 231, 231);
-    bottom: -34.5%;
-    right: -25%;
-    overflow-y: hidden;
+    bottom: 10%;
+    /* Adjusted from -34.5% */
+    right: 0;
+    /* Adjusted from -25% */
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 0;
 }
 
 .blob-style {
